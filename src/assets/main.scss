@@ -1,3 +1,4 @@
+@import 'bootstrap/scss/bootstrap';
 @import '@fontsource/roboto/400.css';
 @import '@fontsource/roboto/900.css';
 
@@ -8,21 +9,16 @@
 }
 
 body{
+  background-color:steelblue;
   font-family: 'Roboto', sans-serif;
-  background-color: brown;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.container-custom{
   border: 1px solid white;
-  border-radius: 10px;
-  max-height: 90%;
-  overflow: auto;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.card{
+  min-height: 350px;
 }

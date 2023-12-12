@@ -1,24 +1,33 @@
-<script >
+<script>
+import Header from './components/partials/Header.vue'
 
 export default {
-  name: 'App',
+  name : 'App',
+  components:{
+      Header
+    },
   data(){
-    return{
-      titolo: 'Bentornato in Vue'
-    }
-  }
-}
+    return{}
+  },
 
+  methods:{},
+
+  mounted(){}
+
+}
 </script>
 
 <template>
-
-  <div class="container">
-    <h1>{{ titolo }}</h1>
-  </div>
-
+  <h1 class="text-center my-5">Boolfolio</h1>
+  <Header />
+    <div class="container container-custom my-5">
+      <RouterView />
+    </div>
 </template>
 
-<style scoped lang="scss">
-
+<style lang="scss" scoped>
+h1{
+  font-weight: bold;
+  font-size: 4rem;
+}
 </style>
